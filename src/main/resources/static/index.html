@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<h1>CRUD Interface</h1>
+<form>
+    <button type="submit" formaction="http://localhost:8080/api/createUser" formmethod="GET">Create</button>
+    <button type="submit" formaction="http://localhost:8080/api/updateUser" formmethod="GET">Update</button>
+    <button type="submit" formaction="http://localhost:8080/api/getUsers" formmethod="GET">Read</button>
+    <button type="submit" formaction="http://localhost:8080/api/deleteUser" formmethod="GET">Delete</button>
+</form>
+</body>
+</html>
